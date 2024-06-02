@@ -1,0 +1,139 @@
+/* Estilos para o componente Post */
+.post {
+    background: var(--gray-800); /* Define a cor de fundo usando uma variável CSS */
+    border-radius: 8px; /* Arredonda os cantos do post */
+    padding: 2.5rem; /* Adiciona preenchimento interno */
+}
+
+/* Adiciona uma margem superior a cada post que segue outro post */
+.post + .post {
+    margin-top: 2rem;
+}
+
+/* Estilos para o conteúdo do post */
+.content {
+    line-height: 1.6; /* Define a altura da linha para melhorar a legibilidade */
+    color: var(--gray-300); /* Define a cor do texto */
+    margin-top: 1.5rem; /* Adiciona uma margem superior */
+}
+
+/* Adiciona uma margem superior a cada parágrafo dentro do conteúdo */
+.content p {
+    margin-top: 1rem;
+}
+
+/* Estilos para links dentro do conteúdo */
+.content a {
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: var(--green-500); /* Define a cor do link */
+    text-decoration: none; /* Remove a sublinha dos links */
+}
+
+/* Muda a cor dos links quando o mouse passa sobre eles */
+.content a:hover {
+    color: var(--green-300);
+}
+
+/* Estilos para o cabeçalho do post */
+.post > header {
+    display: flex; /* Utiliza flexbox para alinhar itens */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+
+/* Estilos para o elemento de tempo no cabeçalho */
+.post > header time {
+    font-size: 0.875rem; /* Define o tamanho da fonte */
+    color: var(--gray-400); /* Define a cor do texto */
+}
+
+/* Estilos para a seção do autor */
+.author {
+    display: flex; /* Utiliza flexbox para alinhar itens */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    gap: 1rem; /* Adiciona um espaçamento entre os itens */
+}
+
+/* Estilos para o nome do autor */
+.authorInfo strong {
+    display: flex; /* Utiliza flexbox */
+    color: var(--gray-100); /* Define a cor do texto */
+    line-height: 1.6; /* Define a altura da linha */
+}
+
+/* Estilos para a função do autor */
+.authorInfo span {
+    display: flex; /* Utiliza flexbox */
+    font-size: 0.875rem; /* Define o tamanho da fonte */
+    color: var(--gray-400); /* Define a cor do texto */
+    line-height: 1.6; /* Define a altura da linha */
+}
+
+/* Estilos para o formulário de comentários */
+.commentForm {
+    width: 100%; /* Define a largura do formulário */
+    margin-top: 1.5rem; /* Adiciona uma margem superior */
+    padding-top: 1.5rem; /* Adiciona um preenchimento superior */
+    border-top: 1px solid var(--gray-600); /* Adiciona uma borda superior */
+}
+
+/* Estilos para o título dentro do formulário de comentários */
+.commentForm > strong {
+    line-height: 1.6; /* Define a altura da linha */
+    color: var(--gray-100); /* Define a cor do texto */
+}
+
+/* Estilos para a área de texto no formulário de comentários */
+.commentForm textarea {
+    width: 100%; /* Define a largura da área de texto */
+    background: var(--gray-900); /* Define a cor de fundo */
+    border: 0; /* Remove a borda padrão */
+    resize: none; /* Desativa o redimensionamento */
+    height: 6rem; /* Define a altura */
+    padding: 1rem; /* Adiciona preenchimento interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    color: var(--gray-100); /* Define a cor do texto */
+    line-height: 1.4; /* Define a altura da linha */
+    margin-top: 1rem; /* Adiciona uma margem superior */
+}
+
+/* Estilos para o rodapé do formulário de comentários */
+.commentForm footer {
+    visibility: hidden; /* Esconde o rodapé */
+    max-height: 0; /* Define a altura máxima como zero */
+}
+
+/* Mostra o rodapé quando o formulário está em foco */
+.commentForm:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+/* Estilos para o botão de submissão do formulário de comentários */
+.commentForm button[type=submit] {
+    padding: 1rem 1.5rem; /* Adiciona preenchimento interno */
+    margin-top: 1rem; /* Adiciona uma margem superior */
+    border-radius: 8px; /* Arredonda os cantos */
+    border: 0; /* Remove a borda padrão */
+    background: var(--green-500); /* Define a cor de fundo */
+    color: var(--white); /* Define a cor do texto */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    transition: background-color 0.1s; /* Adiciona uma transição na cor de fundo */
+}
+
+/* Muda a cor do botão quando o mouse passa sobre ele e ele não está desativado */
+.commentForm button[type=submit]:not(:disabled):hover {
+    background: var(--green-300);
+}
+
+/* Estilos para o botão de submissão quando desativado */
+.commentForm button[type=submit]:disabled {
+    opacity: 0.7; /* Define a opacidade */
+    cursor: not-allowed; /* Define o cursor como não permitido */
+}
+
+/* Estilos para a lista de comentários */
+.commentList {
+    margin-top: 2rem; /* Adiciona uma margem superior */
+}

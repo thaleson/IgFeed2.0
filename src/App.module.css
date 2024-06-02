@@ -1,0 +1,22 @@
+/* Estilização do contêiner principal */
+.wrapper {
+    max-width: 70rem; /* Define a largura máxima */
+    margin: 2rem auto; /* Define as margens superior e inferior e centraliza horizontalmente */
+    padding: 0 1rem; /* Define o espaçamento interno nos lados */
+
+    display: grid; /* Usa um layout de grade */
+    grid-template-columns: 256px 1fr; /* Define duas colunas, uma com 256 pixels de largura e outra com a largura restante */
+    gap: 2rem; /* Define o espaçamento entre as colunas */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+/* Estilização para telas menores que 768 pixels */
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%; /* Reduz o tamanho da fonte para 87.5% */
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr; /* Muda para uma única coluna */
+    }
+}

@@ -1,0 +1,100 @@
+/* Estilização do contêiner principal do comentário */
+.comment {
+    margin-top: 1.5rem; /* Espaçamento superior */
+    display: flex; /* Utiliza flexbox para alinhamento */
+    gap: 1rem; /* Espaçamento entre itens */
+}
+
+/* Estilização da imagem (avatar) dentro do contêiner de comentário */
+.comment > img {
+    width: 3rem; /* Largura do avatar */
+    height: 3rem; /* Altura do avatar */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilização da caixa de comentário */
+.commentBox {
+    flex: 1; /* Permite que a caixa de comentário ocupe o espaço restante */
+}
+
+/* Estilização do conteúdo do comentário */
+.commentContent {
+    background: var(--gray-700); /* Fundo do comentário */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* Estilização do cabeçalho do conteúdo do comentário */
+.commentContent header {
+    display: flex; /* Utiliza flexbox para alinhamento */
+    align-items: flex-start; /* Alinhamento ao início */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+}
+
+/* Estilização do nome do autor e do tempo */
+.authorAndTime strong {
+    display: block; /* Exibe como bloco */
+    font-size: 0.875rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+}
+
+/* Estilização do tempo de publicação */
+.authorAndTime time {
+    display: block; /* Exibe como bloco */
+    font-size: 0.75rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    color: var(--gray-400); /* Cor do texto */
+}
+
+/* Estilização do botão de deletar no cabeçalho */
+.commentContent header button {
+    background: transparent; /* Fundo transparente */
+    border: 0; /* Sem borda */
+    color: var(--gray-400); /* Cor do botão */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+    line-height: 0; /* Altura da linha */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Mudança de cor ao passar o mouse sobre o botão de deletar */
+.commentContent header button:hover {
+    color: var(--red-500); /* Cor do botão ao passar o mouse */
+}
+
+/* Estilização do texto do comentário */
+.commentContent p {
+    margin-top: 1rem; /* Espaçamento superior */
+    color: var(--gray-300); /* Cor do texto */
+}
+
+/* Estilização do rodapé da caixa de comentário */
+.commentBox footer {
+    margin-top: 1rem; /* Espaçamento superior */
+}
+
+/* Estilização do botão no rodapé da caixa de comentário */
+.commentBox footer button {
+    background: transparent; /* Fundo transparente */
+    border: 0; /* Sem borda */
+    color: var(--gray-400); /* Cor do botão */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+    display: flex; /* Utiliza flexbox para alinhamento */
+    align-items: center; /* Alinhamento centralizado */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Mudança de cor ao passar o mouse sobre o botão no rodapé */
+.commentBox footer button:hover {
+    color: var(--green-300); /* Cor do botão ao passar o mouse */
+}
+
+/* Estilização do ícone SVG no botão do rodapé */
+.commentBox footer button svg {
+    margin-right: 0.5rem; /* Espaçamento à direita */
+}
+
+/* Estilização do span antes do contador de curtidas */
+.commentBox footer button span::before {
+    content: "\2022"; /* Adiciona um ponto antes do contador */
+    padding: 0 0.25rem; /* Espaçamento ao redor do ponto */
+}

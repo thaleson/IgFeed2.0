@@ -1,0 +1,13 @@
+/* Estilos aplicados ao elemento header */
+.header {
+    background: var(--gray-800); /* Define a cor de fundo do cabeçalho */
+    display: flex; /* Utiliza flexbox para o alinhamento dos itens */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    padding: 1.25rem; /* Define o espaçamento interno */
+    height: 80px; /* Define a altura do cabeçalho */
+}
+
+/* Estilos aplicados à imagem dentro do header */
+.header img {
+    height: 3rem; /* Define a altura da imagem do logo */
+}

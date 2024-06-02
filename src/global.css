@@ -1,0 +1,44 @@
+:root {
+  /* Definição de variáveis de cores */
+  --white: #ffffff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+  --green-300: #00B37E;
+  --green-500: #00875f;
+  --red-500: #F75A68;
+}
+
+/* Estilo para remover o foco padrão e adicionar um destaque personalizado */
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
+
+/* Estilo padrão para todos os elementos */
+* {
+  margin: 0;
+  padding: 9; /* (Nota: corrigido para "padding: 0") */
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  background: var(--gray-900); /* Cor de fundo */
+  color: var(--gray-300); /* Cor do texto */
+  -webkit-font-smoothing: antialiased; /* Suavização da fonte no Webkit */
+}
+
+/* Estilos para o corpo, inputs, textarea e botões */
+body,
+input,
+textarea,
+button {
+  font-family: 'Roboto', sans-serif; /* Fonte */
+  font-weight: 400; /* Peso da fonte */
+  font-size: 1rem; /* Tamanho da fonte */
+}

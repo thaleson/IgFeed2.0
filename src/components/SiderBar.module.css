@@ -1,0 +1,82 @@
+/* Estilização do contêiner principal da barra lateral */
+.sidebar {
+    background: var(--gray-800); /* Define o fundo com a cor cinza escuro */
+    border: 8px; /* Define a borda com 8 pixels */
+    overflow: hidden; /* Oculta o conteúdo que exceder os limites do contêiner */
+}
+
+/* Estilização da imagem de capa */
+.cover {
+    width: 100%; /* Define a largura como 100% do contêiner */
+    height: 72px; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+}
+
+/* Estilização do perfil do usuário */
+.profile {
+    display: flex; /* Define um layout flexível */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens no eixo horizontal */
+    margin-top: calc(0px - 1rem - 6px); /* Ajusta a margem superior para sobrepor a imagem de capa */
+}
+
+/* Estilização do nome do usuário */
+.profile strong {
+    margin-top: 1rem; /* Adiciona margem superior */
+    color: var(--gray-100); /* Define a cor do texto como cinza claro */
+    line-height: 1.6; /* Define a altura da linha */
+}
+
+/* Estilização do cargo do usuário */
+.profile span {
+    font-size: 0.875rem; /* Define o tamanho da fonte */
+    color: var(--gray-400); /* Define a cor do texto como cinza */
+    line-height: 1.6; /* Define a altura da linha */
+}
+
+/* Estilização do rodapé da barra lateral */
+.sidebar footer {
+    border-top: 1px solid var(--gray-600); /* Adiciona uma borda superior */
+    margin-top: 1.5rem; /* Adiciona margem superior */
+    padding: 1rem 2rem 2rem; /* Define o espaçamento interno */
+}
+
+/* Estilização do link do rodapé */
+.sidebar footer a {
+    background: transparent; /* Define o fundo como transparente */
+    color: var(--green-500); /* Define a cor do texto como verde */
+    border: 1px solid var(--green-500); /* Define a borda com cor verde */
+    border-radius: 8px; /* Define os cantos arredondados */
+    height: 50px; /* Define a altura do link */
+    padding: 0 1.5rem; /* Define o espaçamento interno */
+    font-weight: bold; /* Define o texto em negrito */
+    display: block; /* Define o link como um bloco */
+    text-decoration: none; /* Remove a decoração do texto */
+    display: flex; /* Define um layout flexível */
+    align-items: center; /* Centraliza os itens no eixo vertical */
+    justify-self: center; /* Centraliza o item em si */
+    gap: 0.5rem; /* Define o espaçamento entre os itens */
+    transition: color 0.1s, background-color 0.1s; /* Define a transição para cor e fundo */
+}
+
+/* Estilização do link ao passar o mouse */
+.sidebar footer a:hover {
+    background: var(--green-500); /* Muda o fundo para verde */
+    color: var(--white); /* Muda a cor do texto para branco */
+}
+
+
+
+/* Estilização do link no rodapé */
+.footer a {
+    color: var(--gray-900); /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    background: var(--gray-900);
+    transition: color 0.3s; /* Adiciona uma transição suave na mudança de cor */
+    cursor: pointer;
+}
+
+.footer a:hover {
+    color: var(--green-500); /* Define a cor do link ao passar o mouse sobre ele */
+}
